@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    // display: flex;
+    text-align: center;
+}
+
+
+section {
+    display: flex;
+    //     width: 485px;
+    //     height: 100vh;
+    //     background-color: #2C6145;
+    //     justify-content: flex-start;
+
+    div:nth-of-type(1) {
+        flex: 1;
+        background-color: #2c6145;
+        height: 100vh;
+    }
+
+    div:nth-of-type(2) {
+        width: 485px;
+        background-color: white;
+        height: 100vh;
+        
+
+        .login-container {
+            background-color: #fff;
+            border-radius: 5px;
+            width: 400px;
+            height: 820PX;
+            margin: 50px auto;
+            padding: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+            img {
+                width: 300px;
+                // height: 300px;
+            }
+
+            // h1 {
+            //     color: black;
+            // }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                // background-color: #e74c3c;
+                // height: 300px;
+
+               
+
+                input {
+                    // color: #B4BAC9; couleur du texte en ecrivant
+                    font-family: Encode Sans Expanded;
+                    // font-family: 'Krub', sans-serif;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: 0.72px;
+                    width: 300px;
+                    height: 47px;
+                    margin: 10px 0;
+                    padding: 20px;
+                    border-radius: 10px;
+                    border: 1px solid #B4BAC9;
+                    // font-size: 16px; 
+    
+                } 
+                //style des textes "mdp et am"
+                #am::placeholder{
+                    color:#F5F5F7;
+                }
+                #mdp::placeholder{
+                    color:#F5F5F7;
+                }
+
+                article:nth-of-type(1) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    // height: 200px;
+                    text-align: right;
+                    margin-right: 40px;
+                    width: 342px;
+                
+                P a:nth-child(1){
+                    color: #2C6145;
+                    font-size: 12px;
+                    line-height: 115, 7px;
+                    letter-spacing: 0.72px;
+                    font-family: 'Krub', sans-serif;
+                    font-weight: 400;
+                }
+            }
+                article:nth-of-type(2){
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 300px;
+                    font-family: 'Krub', sans-serif;
+                    font-size:13px;
+                    
+                button {
+                    background-color: #2C6145;
+                    color: #fff;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 10px;
+                    cursor: pointer;
+                    height: 43px;
+                    width: 200px;
+                    font-family: Encode Sans Expanded;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: 0.72px;
+                }
+
+                button:hover {
+                    background-color: darken(#83C7A4, 10%);
+                }
+
+                p a { //a revoir au niveau syntaxe
+                    color: #2C6145;
+                    font-weight: 600;
+                }
+            }
+            }
+
+            //form
+
+        }
+
+        //login container
+    }
+
+    // div 2
+
+}

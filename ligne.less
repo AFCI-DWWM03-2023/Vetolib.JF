@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    // display: flex;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // margin: auto;
+
+    div:nth-of-type(1) {
+        flex: 1;
+        background-color: #2c6145;
+        height: 100vh;
+    }
+
+    div:nth-of-type(2) {
+        width: 485px;
+        background-color: white;
+        height: 100vh;
+
+        .login-container {
+            background-color: #fff;
+            border-radius: 5px;
+            width: 400px;
+            height: 820PX;
+            margin: 50px auto;
+            padding: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+           
+            figure{
+                height: 250PX;
+            }
+
+            article{
+                display: flex;
+                flex-direction: column;
+                justify-content:space-between;
+                height: 400px;
+                
+
+                h5{
+                    color: #374957;
+                    font-weight: bold;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 20px;
+                }
+                h6{
+                    color: #374957;
+                    font-weight: bold;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 15px;
+                }
+
+                p:nth-of-type(1){
+                    color: #777777;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: 0.84px;
+                }
+                p:nth-of-type(2){
+                    color: #374957;
+                    font-size: 12px;
+                    font-family: 'Krub', sans-serif;
+                    font-weight: 400;
+                    line-height: 115.7px; /* 890% */
+                    letter-spacing: 0.78px;
+                    a{
+                    color: #2c6145;
+                    font-weight: bold;
+                }
+                }
+                p:nth-of-type(3){
+                    color: #374957;
+                    font-size: 12px;
+                    font-family: 'Krub', sans-serif;
+                    font-weight: 400;
+                    line-height: 115.7px; /* 890% */
+                    letter-spacing: 0.78px;
+                    a{
+                        color: #2c6145;
+                        font-weight: bold;
+                    }
+                }
+            }
+}
+}
+}
