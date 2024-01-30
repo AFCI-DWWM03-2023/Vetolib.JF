@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2c6145;
+  background-image: url(image/dog-1517090_1280.png);
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: bottom -200px left 350px;
+}
+body section header {
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+body section header .logo {
+  font-size: 35px;
+  color: black;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section header .logo .empreinte {
+  width: 150px;
+  margin-right: 17px;
+}
+body section header .logo p {
+  margin-top: 6%;
+  letter-spacing: 1.92px;
+}
+body section header .logo p span {
+  color: #83C7A4;
+}
+body section header nav {
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+body section header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+body section header nav ul li {
+  list-style: none;
+  letter-spacing: 0.96px;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: none;
+}
+body section header nav ul li:nth-child(1) {
+  width: 150px;
+  height: 64px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body section header nav ul li:nth-child(2) {
+  width: 150px;
+  height: 63px;
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body section header nav ul li:nth-child(3) {
+  width: 250px;
+  margin-left: 10px;
+  height: 64px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body section header nav ul li:nth-child(3) .fleche {
+  margin-right: 15px;
+  margin-top: 1%;
+}
+body section header nav ul li a {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  margin-right: 10px;
+  color: white;
+}
+body section .recherche {
+  width: 20%;
+  height: 60vh;
+  margin-top: 200px;
+  margin-left: 60%;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  flex-direction: column;
+}
+body section .recherche h1 {
+  margin-left: 4%;
+  margin-top: 20%;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+body section .recherche p {
+  margin-left: 4%;
+  width: 400px;
+  margin-top: 10%;
+  color: black;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+body section .recherche .search-box {
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 40px;
+}
+body section .recherche .search-box input,
+body section .recherche .search-box select {
+  border-radius: 40px;
+  margin: 5px;
+  padding: 15px;
+  width: 400px;
+  height: 80px;
+  outline: none;
+  border: 2px solid #83C7A4;
+  background-color: transparent;
+  appearance: none;
+}
+body section .recherche .search-box ::placeholder {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+body section .recherche .search-box .search-button {
+  margin: 10px;
+  background-color: #83C7A4;
+  color: #333333;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border-radius: 40px;
+  margin-left: 59%;
+}
+body .barre {
+  background-color: white;
+  height: 100px;
+}

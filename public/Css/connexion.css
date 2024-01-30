@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  text-align: center;
+}
+body section {
+  display: flex;
+}
+body section div:nth-of-type(1) {
+  flex: 3;
+  background-color: #2c6145;
+  height: 100vh;
+}
+body section div:nth-of-type(2) {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section div:nth-of-type(2) .login-container {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 950PX;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+body section div:nth-of-type(2) .login-container .a1 {
+  position: absolute;
+  top: 10%;
+}
+body section div:nth-of-type(2) .login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50%;
+}
+body section div:nth-of-type(2) .login-container form input {
+  font-family: Encode Sans Expanded;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  width: 300px;
+  height: 47px;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #B4BAC9;
+  outline: none;
+}
+body section div:nth-of-type(2) .login-container form #am::placeholder {
+  color: #F5F5F7;
+}
+body section div:nth-of-type(2) .login-container form #mdp::placeholder {
+  color: #F5F5F7;
+}
+body section div:nth-of-type(2) .login-container form article:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 40px;
+  width: 342px;
+}
+body section div:nth-of-type(2) .login-container form article:nth-of-type(1) P a:nth-child(1) {
+  color: #2C6145;
+  font-size: 12px;
+  line-height: 115, 7px;
+  letter-spacing: 0.72px;
+  font-family: 'Krub', sans-serif;
+  font-weight: 400;
+}
+body section div:nth-of-type(2) .login-container form article:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  font-family: 'Krub', sans-serif;
+  font-size: 13px;
+}
+body section div:nth-of-type(2) .login-container form article:nth-of-type(2) button {
+  background-color: #2C6145;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 43px;
+  width: 200px;
+  font-family: Encode Sans Expanded;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+body section div:nth-of-type(2) .login-container form article:nth-of-type(2) button:hover {
+  background-color: #60b78a;
+}
+body section div:nth-of-type(2) .login-container form article:nth-of-type(2) p a {
+  color: #2C6145;
+  font-weight: 600;
+}

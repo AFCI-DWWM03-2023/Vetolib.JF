@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    // display: flex;
+    text-align: center;
+}
+
+section {
+    display: flex;
+
+    div:nth-of-type(1) {
+        flex: 3; //prend 3/4 de la page 
+        background-color: #2c6145;
+        height: 100vh;
+    }
+
+    //partie blanche
+    div:nth-of-type(2) {
+        flex: 1; //prend 1/4 de la page
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .login-container {
+            background-color: #fff;
+            border-radius: 5px;
+            // width: 400px;
+            height: 950PX;
+            // margin: 50px auto;
+            // padding: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-left: 40px;
+            margin-right: 40px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .a1 {
+                position: absolute;
+                top: 10%;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 50%;
+                // margin: -50px;
+
+                input {
+                    color: #B4BAC9; 
+                    // font-family: Encode Sans Expanded;
+                    font-family: 'Krub', sans-serif;
+                    font-size: 12px;
+                    // font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: 0.72px;
+                    width: 300px;
+                    height: 45px;
+                    margin: 5px 0;
+                    padding: 20px;
+                    border-radius: 10px;
+                    border: 1px solid #B4BAC9;
+                    outline: none;
+
+                    
+
+                }
+
+                :nth-child(1)::placeholder {
+                    color: #F5F5F7;
+                }
+
+                :nth-child(2)::placeholder {
+                    color: #F5F5F7;
+                }
+
+                :nth-child(3)::placeholder {
+                    color: #F5F5F7;
+                }
+
+                :nth-child(4)::placeholder {
+                    color: #F5F5F7;
+                }
+
+                
+
+                small{
+                    color: red;
+                    font-weight: 600;
+                    font-family: 'Krub', sans-serif;
+                }
+                //style des textes "mdp, am, np, cmdp"
+                // #np::placeholder{
+                //     color:#F5F5F7;
+                // }
+                // #am::placeholder{
+                //     color:#F5F5F7;
+                // }
+                // #mdp::placeholder{
+                //     color:#F5F5F7;
+                // }
+                // #cmdp::placeholder{
+                //     color:#F5F5F7;
+                // }
+
+                //partie accepter la conditions
+
+
+                //selectionner le mois filtre
+                // label {
+                //     font-family: sans-serif;
+                //     font-size: 1rem;
+                //     padding-right: 10px;
+                // }
+
+
+                select {
+                    margin: 5%;
+                    padding: 4px;
+                    // box-shadow: 2px 2px 8px #999;
+                    // background: #eee;
+                    border: none;
+                    outline: none;
+                    border-radius: 2px;
+                    font-size: 0.9rem;
+                    font-family: 'Krub', sans-serif;
+                    cursor: pointer;
+                    border-bottom: solid black 2px;
+                    width: 300px;
+                    height: 28px;
+                    outline: 0;
+                }
+
+                figure {
+                    font-size: 12px;
+                    // cursor: pointer;
+                    margin-top: 5%;
+
+
+                    .check {
+                        margin-right: 100px;
+                        position: relative;
+                        font-family: 'Krub', sans-serif;
+                    }
+
+                    .check::before {
+                        content: "";
+                        display: inline-block;
+                        width: 8px;
+                        height: 8px;
+                        margin-right: 8px;
+                        vertical-align: -2px;
+                        border: 2px solid #cccccc;
+                        padding: 2.5px;
+                        background-color: transparent;
+                        background-clip: content-box;
+                        transition: all 0.2s ease;
+                    }
+
+                    .check::after {
+                        border-right: 2px solid black;
+                        border-top: 2px solid black;
+                        content: "";
+                        height: 20px;
+                        left: 2px;
+                        position: absolute;
+                        top: 7px;
+                        transform: scaleX(-1) rotate(135deg);
+                        transform-origin: left top;
+                        width: 7px;
+                        display: none;
+                    }
+
+                    .check-button {
+                        border: 0;
+                        clip: rect(0 0 0 0);
+                        height: 1px;
+                        margin: -1px;
+                        overflow: hidden;
+                        padding: 0;
+                        position: absolute;
+                        width: 1px;
+                    }
+
+                    .check-button:hover+.check::before {
+                        border-color: #60b78a;
+
+                    }
+
+                    .check-button:checked+.check::before {
+                        border-color: #60b78a;
+                    }
+
+                    .check-button:checked+.check::after {
+                        -moz-animation: check 0.8s ease 0s running;
+                        -webkit-animation: check 0.8s ease 0s running;
+                        animation: check 0.8s ease 0s running;
+                        display: block;
+                        width: 7px;
+                        height: 20px;
+                        border-color: #83C7A4;
+                    }
+
+                    @keyframes check {
+                        0% {
+                            height: 0;
+                            width: 0;
+                        }
+
+                        25% {
+                            height: 0;
+                            width: 7px;
+                        }
+
+                        50% {
+                            height: 20px;
+                            width: 7px;
+                        }
+                    }
+
+                    label a {
+                        color: #2C6145;
+                        font-weight: 600;
+                    }
+
+
+                }
+
+
+
+                article {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    height: 250px;
+                    font-family: 'Krub', sans-serif;
+                    font-size: 13px;
+                    align-items: center;
+
+                    button {
+                        background-color: #2C6145;
+                        color: #fff;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 10px;
+                        cursor: pointer;
+                        height: 43px;
+                        width: 200px;
+                        font-family: Encode Sans Expanded;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: 0.72px;
+
+                        &:hover {
+                            background-color: darken(#83C7A4, 10%);
+                        }
+                    }
+
+
+                    p a {
+                        //a revoir au niveau syntaxe
+                        color: #2C6145;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+        }
+
+        //login container
+    }
+}
